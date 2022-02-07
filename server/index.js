@@ -9,7 +9,7 @@ import postRoutes from './routes/posts.js'
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-app.use('/posts', postRoutes);
+app.use('/posts', postRoutes)
 
 app.use(express.json({ limit: '30mb', extended: false}));
 app.use(express.urlencoded({ limit: '30mb', extended: false}));
